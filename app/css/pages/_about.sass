@@ -1,75 +1,118 @@
-.about
+main
     .container
-        .about-first-title
+        h1
             margin-bottom: 50px
             +bold
             font-size: 35px
+            p:first-child
+                margin-bottom: 15px
         .about-list-tasks
+            padding: 0px 10px 20px 10px
             margin-bottom: 50px
-            border: 2px solid #058d17
-            border-radius: 5px
+            border: 1px solid #058d17
             background-color: #d9ffde78
-            &__item
+            li
                 padding: 10px
                 font-size: 20px
                 &:not(:first-child)
                     margin-left: 50px
-                    list-style: disc
+                    &::before
+                        content: url('../../images/about/checklist.svg')
+                        width: 25px
+                        display: inline-block
+                        margin-right: 10px
+                        transform: translateY(25%)
                 &:first-child
                     list-style: none
-                .list__title
+                h2
+                    padding-bottom: 20px
                     font-size: 25px
                     border-bottom: 1px solid #058d17
                     &::before
                         content: url('../../images/about/clipboard.svg')
                         margin-right: 10px
+                        transform: translateY(20%)
                         display: inline-block
-                        width: 25px
-        .about-subtitle
-            margin-bottom: 100px
-            font-style: italic
-            font-size: 20px
+                        width: 45px
         .about-second-title, .about-underfooter-title 
             margin-bottom: 50px
             text-align: center
             color: $red
+    section.reasons
+        padding: 50px 0
+        background-color: #F5F7F8
+        h2 
+            font-size: 35px
+            color: $red
+            text-align: center
+            margin-bottom: 90px
         .about-list-reasons
             margin-bottom: 50px
             display: flex
             flex-wrap: wrap
             justify-content: space-evenly
-            .list-item
+            li.list-item
                 margin-bottom: 50px
-                width: 50vh
-                padding: 20px
-                border: 2px solid rgba(0, 0, 0,.3)
+                width: 400px
+                padding: 20px 30px
+                box-shadow: 3px 2px 8px rgba(0,0,0,0.4)
                 border-radius: 5px
-                &__image
-                    margin: 0 auto 30px auto    
-                &__title
-                    margin-bottom: 10px
+                background-color: #fff
+                .list-item__image
+                    margin: 0 auto 30px auto 
+                    width: 120px
+                    img
+                        width: 100%  
+                h3
+                    margin-bottom: 20px
+                    padding-bottom: 10px
                     text-align: center
-                &__description, &__list-lessons
+                    border-bottom: 1px solid rgba(0,0,0, .3)
+                p, .list-item__list-lessons
                     +norm
                     line-height: 1.3
                     font-size: 18px
-                &__list-lessons
-                    .list-lessons__item
+                .list-item__list-lessons
+                    li.list-lessons__item
                         margin: 0 0 10px 20px
-                        list-style: disc
-        .faq
-            margin-bottom: 50px
-            border: 2px solid $red
-            border-radius: 5px
-            background-color: #fde8f17e
-            &-list
+                        &::before
+                            content: url('../../images/about/star.svg')
+                            display: inline-block
+                            width: 20px
+                            margin-right: 10px
+                            transform: translateY(15%)
+    section.faq
+        margin: 100px 0
+        .container
+            padding: 30px
+            border: 1px solid $red
+            background-color: #fdf6f9
+            .faq-list
+                padding: 0px 10px 10px 20px
                 font-size: 20px
-                &__item
+                h3
+                    padding-bottom: 20px
+                    font-size:  25px
+                    border-bottom: 1px solid $red
+                li.list-item
                     padding: 10px
                     font-size: 20px
+                    &:not(:first-child)
+                        margin-left: 10px
+                .icon::before
+                    content: url('../../images/about/ask.svg')
+                    width: 25px
+                    display: inline-block
+                    margin-right: 10px
+                    transform: translateY(25%)
+                .item-descroption
+                    margin-top: 30px
+                    +bold
+                &:first-child, .btn-wrapper
+                    list-style: none
                     .btn-free-lesson
                         width: 500px
-                        margin: 30px 0 10px 50%
+                        margin: 30px 0 20px 50%
                         padding: 20px
                         transform: translateX(-50%)
                         background: rgb(255,54,136)
@@ -80,38 +123,20 @@
                         color: #ffffff
                         &:hover
                             background: linear-gradient(180deg, rgba(244,39,123,1) 0%, rgba(189,0,77,1) 100%)
-                &__item:not(:first-child)
-                    margin-left: 50px
-                    list-style: disc
-                &__item:first-child, &__item:last-child, .item-descroption
-                    list-style: none
-                .item-descroption
-                    +bold
-                    font-size: 20px
-                &__item:last-child
-                    padding: 0
-                    margin: 0
-                &__title
-                    padding-bottom: 5px
-                    font-size: 25px
-                    border-bottom: 1px solid $red
-                    &::before
-                        content: url('../../images/about/interrogation.svg')
-                        margin-right: 10px
-                        display: inline-block
-                        width: 25px
-        .about-quote
-            +bold
+            h2
+                color: $red
+                text-align: center
 
 @media (max-width: 768px)
-    .about
+    main
         .container
-            .about-first-title
+            h1
                 margin-top: 20px
                 font-size: 25px
-            .faq
-                &-list
-                    &__item
+        section.faq
+            .container
+                .faq-list
+                    .btn-wrapper
                         .btn-free-lesson
                             padding: 15px
                             width: 80% 
