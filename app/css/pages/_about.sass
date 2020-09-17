@@ -3,9 +3,9 @@ main
         h1
             margin-bottom: 50px
             +bold
-            font-size: 35px
+            font-size: 40px
             p:first-child
-                margin-bottom: 15px
+                margin-bottom: 20px
         .about-list-tasks
             padding: 0px 10px 20px 10px
             margin-bottom: 50px
@@ -42,7 +42,7 @@ main
         padding: 50px 0
         background-color: #F5F7F8
         h2 
-            font-size: 35px
+            font-size: 40px
             color: $red
             text-align: center
             margin-bottom: 90px
@@ -85,7 +85,6 @@ main
         margin: 100px 0
         .container
             .faq-list
-                margin-bottom: 50px
                 padding: 30px
                 font-size: 20px
                 border: 1px solid $red
@@ -108,20 +107,22 @@ main
                 .item-descroption
                     margin-top: 30px
                     +bold
-                &:first-child, .btn-wrapper
+                &:first-child
                     list-style: none
-                    .btn-free-lesson
-                        width: 500px
-                        margin: 30px 0 20px 50%
-                        padding: 20px
-                        transform: translateX(-50%)
-                        background: rgb(255,54,136)
-                        background: linear-gradient(0deg, rgba(244,39,123,1) 0%, rgba(189,0,77,1) 100%)
-                        +bold
-                        font-size: 25px
-                        color: #ffffff
-                        &:hover
-                            background: linear-gradient(180deg, rgba(244,39,123,1) 0%, rgba(189,0,77,1) 100%)
+            .btn-wrapper
+                width: 100%
+                text-align: center
+                .btn-free-lesson
+                    width: 500px
+                    margin: 50px auto
+                    padding: 20px
+                    background: rgb(255,54,136)
+                    background: linear-gradient(0deg, rgba(244,39,123,1) 0%, rgba(189,0,77,1) 100%)
+                    +bold
+                    font-size: 25px
+                    color: #ffffff
+                    &:hover
+                        background: linear-gradient(180deg, rgba(244,39,123,1) 0%, rgba(189,0,77,1) 100%)
             h2
                 color: $red
                 text-align: center
@@ -131,12 +132,12 @@ main
         .container
             h1
                 margin-top: 20px
-                font-size: 25px
+                font-size: 30px
+        section.reasons
+            h2
+                font-size: 35px
         section.faq
-            .container
-                .faq-list
-                    .btn-wrapper
-                        .btn-free-lesson
-                            padding: 15px
-                            width: 80% 
-                            font-size: 20px
+            .btn-free-lesson
+                padding: 15px
+                width: 80% 
+                font-size: 20px
