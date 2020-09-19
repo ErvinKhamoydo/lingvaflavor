@@ -24,7 +24,7 @@ main.about
                 padding: 10px
                 font-size: 20px
                 &:not(:first-child)
-                    margin-left: 50px
+                    margin-left: 5%
                     &::before
                         content: url('../../images/about/checklist.svg')
                         width: 25px
@@ -51,7 +51,7 @@ main.about
             justify-content: space-evenly
             &-item
                 margin-bottom: 50px
-                width: 400px
+                max-width: 400px
                 padding: 20px 30px
                 box-shadow: 5px 5px 10px rgba(0,0,0,.4)
                 border-radius: 5px
@@ -123,17 +123,16 @@ main.about
         section.about-reasons
             .about-reasons-list
                 &-item
-                    margin: 0 15px 30px 0 
+                    margin: 0 10px 30px 
                     padding: 10px 20px
 
 
 @media (max-width: 768px)
     main.about
-        section.about-tasks
-            ul.about-tasks-list
-                li
-                    &:not(:first-child)
-                        margin-left: 10px
+        section.about-reasons
+            .about-reasons-list
+                &-item
+                    margin-bottom: 30px
         section.about-faq
             .about-faq-list
                 li
