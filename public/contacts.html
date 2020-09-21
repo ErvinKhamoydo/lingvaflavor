@@ -1,0 +1,239 @@
+
+<html lang="ru"></html><!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LingvaFlavor - онлайн школа иностранных языков</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content"><a class="logo header__logo" href="/"><img class="logo__icon" src="images/logo.svg" alt="лого"><img class="logo__text" src="images/logo-text.svg" alt="название и слоган"></a>
+        <div class="header__social"><a class="header__social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M16.283 13.883c0 2.026-1.615 3.354-4.026 3.354-2.121 0-4.252-.965-4.242-2.627.003-.501.376-.961.872-.961 1.249 0 1.237 1.863 3.225 1.863 1.396 0 1.872-.764 1.872-1.296 0-1.924-6.03-.745-6.03-4.362 0-1.958 1.602-3.309 4.12-3.161 2.401.142 3.809 1.202 3.944 2.193.067.647-.361 1.151-1.105 1.151-1.086 0-1.196-1.454-3.067-1.454-.844 0-1.556.352-1.556 1.116 0 1.597 5.993.67 5.993 4.184zm7.717-8.883v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4.675 8.311c.904-5.177-3.61-9.608-8.702-8.653-3.881-2.374-8.335 2.151-5.956 6.02-.925 5.165 3.589 9.654 8.722 8.673 3.888 2.357 8.329-2.174 5.936-6.04z" fill="#00aff0"> </path>
+            </svg></a><a class="header__social-link" href="#">
+            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <linearGradient id="SVGID_1_" gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047">
+                <stop offset="0" stop-color="#fd5"></stop>
+                <stop offset=".5" stop-color="#ff543e"></stop>
+                <stop offset="1" stop-color="#c837ab"></stop>
+              </linearGradient>
+              <path d="m1.5 1.633c-1.886 1.959-1.5 4.04-1.5 10.362 0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091-.559-.081-.671-.105-3.539-.11-10.173.005-12.403-.448-14.41 1.633z" fill="url(#SVGID_1_)"></path>
+              <path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" fill="#fff"></path>
+            </svg></a><a class="header__social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.25 16.996h-2.134c-1.205 0-1.409-.687-2.401-1.679-.897-.897-1.395-.209-1.374 1.068.006.339-.161.611-.566.611-1.264 0-3.08.178-4.918-1.806-1.883-2.033-3.857-6.111-3.857-6.513 0-.237.196-.344.524-.344h2.17c.574 0 .623.284.783.649.667 1.521 2.265 4.574 2.69 2.87.244-.978.344-3.245-.703-3.44-.594-.11.452-.746 1.968-.746.377 0 .786.041 1.205.137.769.179.771.523.761 1.026-.039 1.903-.269 3.184.233 3.507.479.31 1.739-1.717 2.403-3.281.183-.433.219-.722.734-.722h2.654c1.39 0-.182 1.997-1.383 3.557-.968 1.255-.916 1.28.209 2.324.803.744 1.75 1.76 1.75 2.336.002.272-.21.446-.748.446z" fill="#4680C2"></path>
+            </svg></a><a class="header__social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z" fill="#4AC959">         </path>
+            </svg></a><a class="header__social-link" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+              <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.806-17.791c-.419-.386-2.114-1.616-5.887-1.633 0 0-4.451-.268-6.62 1.722-1.207 1.208-1.632 2.974-1.677 5.166-.045 2.192-.103 6.298 3.855 7.411l.004.001-.002 1.699s-.025.688.427.828c.548.17.87-.353 1.393-.916.287-.309.683-.764.982-1.111 2.707.227 4.789-.293 5.026-.37.547-.178 3.639-.574 4.142-4.679.519-4.234-.251-6.911-1.643-8.118zm.458 7.812c-.425 3.428-2.933 3.645-3.395 3.793-.197.063-2.026.518-4.325.368 0 0-1.714 2.067-2.249 2.605-.083.084-.181.118-.247.102-.092-.023-.118-.132-.116-.291l.014-2.824c-3.348-.93-3.153-4.425-3.115-6.255.038-1.83.382-3.33 1.403-4.338 1.835-1.662 5.615-1.414 5.615-1.414 3.192.014 4.722.976 5.077 1.298 1.177 1.008 1.777 3.421 1.338 6.956zm-6.025.206s.3.026.461-.174l.315-.396c.152-.196.519-.322.878-.122.475.268 1.09.69 1.511 1.083.232.196.286.484.128.788l-.002.006c-.162.288-.38.557-.655.807l-.006.005c-.309.258-.665.408-1.046.284l-.007-.01c-.683-.193-2.322-1.029-3.367-1.862-1.709-1.349-2.923-3.573-3.26-4.765l-.01-.007c-.124-.382.027-.738.284-1.046l.005-.006c.251-.275.52-.492.807-.655l.006-.001c.304-.159.592-.105.788.127.258.267.743.908 1.083 1.511.2.359.075.726-.122.878l-.396.315c-.2.161-.174.461-.174.461s.586 2.219 2.779 2.779zm3.451-1.84c.118-.001.213-.097.212-.215-.011-1.404-.441-2.531-1.278-3.348-.835-.814-1.887-1.231-3.126-1.24h-.001c-.117 0-.213.094-.214.212 0 .118.094.214.212.215 1.125.008 2.078.384 2.831 1.119.753.734 1.139 1.759 1.149 3.046.001.117.096.211.213.211h.002zm-1.123-.438h-.005c-.118-.003-.211-.1-.208-.218.016-.73-.192-1.32-.637-1.806-.443-.484-1.051-.749-1.86-.808-.117-.009-.206-.111-.197-.228.009-.118.111-.206.228-.198.91.067 1.631.385 2.144.946.515.562.767 1.27.748 2.103-.002.117-.097.209-.213.209zm-1.095-.367c-.113 0-.207-.089-.213-.203-.036-.724-.377-1.079-1.074-1.116-.117-.007-.208-.107-.201-.225.006-.117.106-.208.224-.201.919.049 1.43.575 1.477 1.521.006.118-.084.218-.202.224h-.011z" fill="#665CAC"></path>
+            </svg></a></div>
+        <div class="header__button-test button-test">начать бесплатно</div>
+        <div class="hamburger">
+          <div class="hamburger-menu"></div>
+        </div>
+      </div>
+      <div class="header__menu"><a class="header__menu-link" href="about.html">почему мы</a><a class="header__menu-link" href="#">преподаватели</a><a class="header__menu-link" href="method.html">методика</a><a class="header__menu-link" href="#">цены</a><a class="header__menu-link" href="contacts.html">контакты</a></div>
+      <div class="header__langs"><a class="header__langs-item" href=""><img src="images/flags/gb.jpg" alt="английский">
+          <div class="header__langs-item-title">английский</div></a><a class="header__langs-item" href=""><img src="images/flags/fr.jpg" alt="французский">
+          <div class="header__langs-item-title">французский</div></a><a class="header__langs-item" href=""><img src="images/flags/ger.jpg" alt="немецкий">
+          <div class="header__langs-item-title">немецкий</div></a><a class="header__langs-item" href=""><img src="images/flags/it.jpg" alt="итальянский">
+          <div class="header__langs-item-title">итальянский</div></a><a class="header__langs-item" href=""><img src="images/flags/sp.jpg" alt="испанский">
+          <div class="header__langs-item-title">испанский</div></a><a class="header__langs-item" href=""><img src="images/flags/jp.jpg" alt="китайский">
+          <div class="header__langs-item-title">японский</div></a><a class="header__langs-item" href=""><img src="images/flags/ch.jpg" alt="китайский">
+          <div class="header__langs-item-title">китайский</div></a><a class="header__langs-item" href=""><img src="images/flags/kor.jpg" alt="корейский">
+          <div class="header__langs-item-title">корейский</div></a><a class="header__langs-item" href=""><img src="images/flags/tr.jpg" alt="турецкий">
+          <div class="header__langs-item-title">турецкий</div></a><a class="header__langs-item" href=""><img src="images/flags/rus.jpg" alt="русский">
+          <div class="header__langs-item-title">русский</div></a><a class="header__langs-item" href=""><img src="images/flags/uae.jpg" alt="арабский">
+          <div class="header__langs-item-title">арабский           </div></a></div>
+    </div>
+  </header>
+  <main class="contacts">
+    <section class="contacts-social-links contacts-section">
+      <div class="container">
+        <h1 class="contacts-social-links-header-title title">Контакты</h1>
+        <ul class="contacts-social-links-list">
+          <li class="contacts-social-links-list-item">
+            <div class="contacts-social-links-list-item-image"><img class="contacts-social-links-list-item-image-elem" src="images/contacts/viber.svg" alt="Viber"><img class="contacts-social-links-list-item-image-elem" src="images/contacts/whatsapp.svg" alt="WhatsApp"></div>
+            <h3 class="contacts-social-links-list-item-title">Viber/WhatsApp</h3>
+            <h4 class="contacts-social-links-list-item-link">+79053668789</h4>
+            <div class="contacts-social-links-list-item-description">Пишите сообщения или звоните бесплатно через приложения</div>
+          </li>
+          <li class="contacts-social-links-list-item">
+            <div class="contacts-social-links-list-item-image"><img src="images/contacts/instagram.svg" alt="Instagram" width="80"></div>
+            <h3 class="contacts-social-links-list-item-title">Instargam</h3>
+            <h4 class="contacts-social-links-list-item-link">@lingvaflavor_offical</h4>
+            <div class="contacts-social-links-list-item-description">Следи за нами</div>
+          </li>
+          <li class="contacts-social-links-list-item">
+            <div class="contacts-social-links-list-item-image"><img src="images/contacts/gmail.svg" alt="Email" width="80"></div>
+            <h3 class="contacts-social-links-list-item-title">Email</h3>
+            <h4 class="contacts-social-links-list-item-link">lingvaflavor20@yandex.ru</h4>
+            <div class="contacts-social-links-list-item-description">Электронная почта для Ваших вопросов, предложений, пожеланий</div>
+          </li>
+          <li class="contacts-social-links-list-item">
+            <div class="contacts-social-links-list-item-image"><img src="images/contacts/skype.svg" alt="Skype" width="80"></div>
+            <h3 class="contacts-social-links-list-item-title">Skype</h3>
+            <h4 class="contacts-social-links-list-item-link">LingvaFlavor</h4>
+            <div class="contacts-social-links-list-item-description">Логин в скайпе: LingvaFlavor</div>
+          </li>
+        </ul>
+        <h2 class="contacts-social-links-footer-title title-red">Мы работаем <span>c 09:00 до 20:00</span></h2>
+      </div>
+    </section>
+    <section class="contacts-staff contacts-section">
+      <div class="container">
+        <div class="contacts-staff-list">
+          <li class="contacts-staff-list-item">
+            <div class="contacts-staff-list-item-image"><img src="images/contacts/marina.jpg" alt="Марина Запольская"></div>
+            <div class="contacts-staff-list-item-description">
+              <h2 class="contacts-staff-list-item-description-title">Марина Запольская — директор онлайн школы «LingvaFlavor»</h2>
+              <div class="contacts-staff-list-item-description-text"> 
+                <p>Приглашаем Вас на уроки иностранных языков по Skype! Наши менеджеры с радостью ответят на Ваши вопросы по телефону, Skype или электронной почте с 9:00 до 20:00 (по московскому времени) в любой день недели.</p>
+                <p>Мы всегда готовы принять вашу заявку на обучение, выслушать ваши пожелания, подобрать подходящего преподавателя и курс обучения, а также решить текущие вопросы во время учебного процесса. Будем ждать ваших обращений!</p>
+              </div>
+            </div>
+          </li>
+          <li class="contacts-staff-list-item">
+            <div class="contacts-staff-list-item-image"><img src="images/contacts/marina.jpg" alt="Марина Запольская"></div>
+            <div class="contacts-staff-list-item-description">
+              <h2 class="contacts-staff-list-item-description-title">Марина Запольская — директор онлайн школы «LingvaFlavor»</h2>
+              <div class="contacts-staff-list-item-description-text">
+                <p>Приглашаем Вас на уроки иностранных языков по Skype! Наши менеджеры с радостью ответят на Ваши вопросы по телефону, Skype или электронной почте с 9:00 до 20:00 (по московскому времени) в любой день недели.</p>
+                <p>Мы всегда готовы принять вашу заявку на обучение, выслушать ваши пожелания, подобрать подходящего преподавателя и курс обучения, а также решить текущие вопросы во время учебного процесса. Будем ждать ваших обращений!</p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </section>
+    <section class="contacts-company-info contacts-section">
+      <div class="container">
+        <ul class="contacts-company-info-list">
+          <li class="contacts-company-info-list-item">
+            <div class="contacts-company-info-list-item-image"><img src="images/contacts/certificate.jpg" alt="Свидетельство"></div>
+          </li>
+          <li class="contacts-company-info-list-item">
+            <ul class="contacts-company-info-list-item-list-info contacts-company-info-list-item-list-detail">
+              <li class="contacts-company-info-list-item-list-info-item contacts-company-info-list-item-list-detail-item">
+                <h2 class="contacts-company-info-list-item-list-info-item-title list-title">Юридические сведения о компании</h2>
+              </li>
+              <li class="contacts-company-info-list-item-list-info-item contacts-company-info-list-item-list-detail-item">ЧОУ ДО Школа иностранных языков «Уникум»</li>
+              <li class="contacts-company-info-list-item-list-info-item contacts-company-info-list-item-list-detail-item">Юридический адрес: г. Пенза ул. Московская, 64</li>
+              <li class="contacts-company-info-list-item-list-info-item contacts-company-info-list-item-list-detail-item">ИНН: 5836140384</li>
+              <li class="contacts-company-info-list-item-list-info-item contacts-company-info-list-item-list-detail-item">ОГРН: 1025801364423</li>
+            </ul>
+            <ul class="contacts-company-info-list-item-list-requisites contacts-company-info-list-item-list-detail">
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">
+                <h2 class="contacts-company-info-list-item-list-requisites-item-title list-title">Банковские реквизиты</h2>
+              </li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">Получатель: Березовская Маргарита Юрьевна</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">Банк: ПЕНЗЕНСКОЕ ОТДЕЛЕНИЕ N8624 ПАО СБЕРБАНК</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">Номер карты: 4276 4800 1677 2769</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">Расчетный счет: 40817810748005098084</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">Кор. счет: 30101810000000000635</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">БИК: 045655635</li>
+              <li class="contacts-company-info-list-item-list-requisites-item contacts-company-info-list-item-list-detail-item">SWIFT: SABRRUMM</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-block"><a class="logo header__logo" href="/"><img class="logo__icon" src="images/logo.svg" alt="лого"><img class="logo__text" src="images/logo-text.svg" alt="название и слоган"></a>
+        <div class="footer-copyrights">© 2011-2020 LingvaFlavor.com. Все права защищены</div><a class="footer-polici" href="#">Политика конфиденциальности</a><a class="footer-offer" href="#">Оферта</a>
+      </div>
+      <div class="footer-block">
+        <div class="footer-social"><a class="footer__social-link" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M16.283 13.883c0 2.026-1.615 3.354-4.026 3.354-2.121 0-4.252-.965-4.242-2.627.003-.501.376-.961.872-.961 1.249 0 1.237 1.863 3.225 1.863 1.396 0 1.872-.764 1.872-1.296 0-1.924-6.03-.745-6.03-4.362 0-1.958 1.602-3.309 4.12-3.161 2.401.142 3.809 1.202 3.944 2.193.067.647-.361 1.151-1.105 1.151-1.086 0-1.196-1.454-3.067-1.454-.844 0-1.556.352-1.556 1.116 0 1.597 5.993.67 5.993 4.184zm7.717-8.883v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4.675 8.311c.904-5.177-3.61-9.608-8.702-8.653-3.881-2.374-8.335 2.151-5.956 6.02-.925 5.165 3.589 9.654 8.722 8.673 3.888 2.357 8.329-2.174 5.936-6.04z" fill="#00aff0"></path>
+            </svg></a><a class="footer__social-link" href="">
+            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <linearGradient id="SVGID_3_" gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047">
+                <stop offset="0" stop-color="#fd5"></stop>
+                <stop offset=".5" stop-color="#ff543e"></stop>
+                <stop offset="1" stop-color="#c837ab"></stop>
+              </linearGradient>
+              <path d="m1.5 1.633c-1.886 1.959-1.5 4.04-1.5 10.362 0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091-.559-.081-.671-.105-3.539-.11-10.173.005-12.403-.448-14.41 1.633z" fill="url(#SVGID_3_)"></path>
+              <path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" fill="#fff"></path>
+            </svg></a><a class="footer__social-link" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.25 16.996h-2.134c-1.205 0-1.409-.687-2.401-1.679-.897-.897-1.395-.209-1.374 1.068.006.339-.161.611-.566.611-1.264 0-3.08.178-4.918-1.806-1.883-2.033-3.857-6.111-3.857-6.513 0-.237.196-.344.524-.344h2.17c.574 0 .623.284.783.649.667 1.521 2.265 4.574 2.69 2.87.244-.978.344-3.245-.703-3.44-.594-.11.452-.746 1.968-.746.377 0 .786.041 1.205.137.769.179.771.523.761 1.026-.039 1.903-.269 3.184.233 3.507.479.31 1.739-1.717 2.403-3.281.183-.433.219-.722.734-.722h2.654c1.39 0-.182 1.997-1.383 3.557-.968 1.255-.916 1.28.209 2.324.803.744 1.75 1.76 1.75 2.336.002.272-.21.446-.748.446z" fill="#4680C2"></path>
+            </svg></a><a class="footer__social-link" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z" fill="#4AC959"></path>
+            </svg></a><a class="footer__social-link" href="">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+              <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.806-17.791c-.419-.386-2.114-1.616-5.887-1.633 0 0-4.451-.268-6.62 1.722-1.207 1.208-1.632 2.974-1.677 5.166-.045 2.192-.103 6.298 3.855 7.411l.004.001-.002 1.699s-.025.688.427.828c.548.17.87-.353 1.393-.916.287-.309.683-.764.982-1.111 2.707.227 4.789-.293 5.026-.37.547-.178 3.639-.574 4.142-4.679.519-4.234-.251-6.911-1.643-8.118zm.458 7.812c-.425 3.428-2.933 3.645-3.395 3.793-.197.063-2.026.518-4.325.368 0 0-1.714 2.067-2.249 2.605-.083.084-.181.118-.247.102-.092-.023-.118-.132-.116-.291l.014-2.824c-3.348-.93-3.153-4.425-3.115-6.255.038-1.83.382-3.33 1.403-4.338 1.835-1.662 5.615-1.414 5.615-1.414 3.192.014 4.722.976 5.077 1.298 1.177 1.008 1.777 3.421 1.338 6.956zm-6.025.206s.3.026.461-.174l.315-.396c.152-.196.519-.322.878-.122.475.268 1.09.69 1.511 1.083.232.196.286.484.128.788l-.002.006c-.162.288-.38.557-.655.807l-.006.005c-.309.258-.665.408-1.046.284l-.007-.01c-.683-.193-2.322-1.029-3.367-1.862-1.709-1.349-2.923-3.573-3.26-4.765l-.01-.007c-.124-.382.027-.738.284-1.046l.005-.006c.251-.275.52-.492.807-.655l.006-.001c.304-.159.592-.105.788.127.258.267.743.908 1.083 1.511.2.359.075.726-.122.878l-.396.315c-.2.161-.174.461-.174.461s.586 2.219 2.779 2.779zm3.451-1.84c.118-.001.213-.097.212-.215-.011-1.404-.441-2.531-1.278-3.348-.835-.814-1.887-1.231-3.126-1.24h-.001c-.117 0-.213.094-.214.212 0 .118.094.214.212.215 1.125.008 2.078.384 2.831 1.119.753.734 1.139 1.759 1.149 3.046.001.117.096.211.213.211h.002zm-1.123-.438h-.005c-.118-.003-.211-.1-.208-.218.016-.73-.192-1.32-.637-1.806-.443-.484-1.051-.749-1.86-.808-.117-.009-.206-.111-.197-.228.009-.118.111-.206.228-.198.91.067 1.631.385 2.144.946.515.562.767 1.27.748 2.103-.002.117-.097.209-.213.209zm-1.095-.367c-.113 0-.207-.089-.213-.203-.036-.724-.377-1.079-1.074-1.116-.117-.007-.208-.107-.201-.225.006-.117.106-.208.224-.201.919.049 1.43.575 1.477 1.521.006.118-.084.218-.202.224h-.011z" fill="#665CAC"></path>
+            </svg></a></div>
+      </div>
+      <div class="footer-block footer-block_right">
+        <ul class="footer__links">
+          <li><a class="footer__link" href="">Вакансии          </a></li>
+          <li><a class="footer__link" href="">Job for native speakers</a></li>
+          <li><a class="footer__link" href="">сертификат</a></li>
+          <li><a class="footer__link" href="">контакты</a></li>
+          <li><a class="footer__link" href="">отзывы</a></li>
+        </ul>
+        <div class="footer__contacts"><span class="footer__contacts-title">свяжитесь с нами:</span><a class="footer__contacts-phone" href="tel:+79053668789">+7 905 366-87-89</a><a class="footer__contacts-email" href="mailto:lingvaflavor20@yandex.ru">lingvaflavor20@yandex.ru</a><a class="footer__contacts-btn" href="contacts.html">Обратная связь</a></div>
+        <div class="footer-top-btn">
+          <svg width="18" height="141" viewBox="0 0 18 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.4 7L8 3.59459V42H10V3.59459L13.6 7L15 5.67568L9 0L3 5.67568L4.4 7Z"></path>
+            <path d="M4.19996 62.5254V60.5094L9.00196 63.8134L14 60.3834V62.3994L10.318 64.9334L14 67.4534V69.4694L9.00196 66.0394L4.19996 69.3154V67.2994L7.74196 64.8914L4.19996 62.5254Z">                </path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 75.3958H10.458C10.486 75.1158 10.5 74.6911 10.5 74.1218C10.5 72.9924 10.192 72.1151 9.57596 71.4898C8.95996 70.8551 8.20863 70.5378 7.32196 70.5378C6.89263 70.5378 6.50063 70.6031 6.14596 70.7338C5.78196 70.8644 5.45063 71.0698 5.15196 71.3498C4.84396 71.6298 4.60596 72.0265 4.43796 72.5398C4.26063 73.0438 4.17196 73.6411 4.17196 74.3318C4.17196 74.8171 4.17663 75.3025 4.18596 75.7878C4.19529 76.2638 4.19996 76.7071 4.19996 77.1178H14V75.3958ZM5.80996 75.3958L5.78196 74.1638C5.78196 72.9598 6.29063 72.3578 7.30796 72.3578C7.82129 72.3578 8.21329 72.5258 8.48396 72.8618C8.75463 73.1884 8.88996 73.6271 8.88996 74.1778C8.88996 74.4951 8.86663 74.9011 8.81996 75.3958H5.80996Z"></path>
+            <path d="M14 80.1605V85.9705H4.19996V80.3005H5.80996V84.2485H8.24596V80.7205H9.85596V84.2485H12.39V80.1605H14Z">                </path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22796 95.4111H13.986C14.0326 94.7111 14.056 93.8011 14.056 92.6811C14.056 91.5611 13.804 90.6745 13.3 90.0211C12.796 89.3678 12.068 89.0411 11.116 89.0411C10.5093 89.0411 10.0146 89.1951 9.63196 89.5031C9.23996 89.8111 8.97396 90.2311 8.83396 90.7631H8.80596C8.37663 89.8298 7.63463 89.3631 6.57996 89.3631C5.82396 89.3631 5.23129 89.6291 4.80196 90.1611C4.37263 90.6931 4.15796 91.5005 4.15796 92.5831C4.15796 93.4605 4.18129 94.4031 4.22796 95.4111ZM9.78596 93.6891V92.4711C9.78596 91.9298 9.89329 91.5098 10.108 91.2111C10.3133 90.9125 10.6213 90.7631 11.032 90.7631C11.9746 90.7631 12.446 91.3605 12.446 92.5551C12.446 92.8725 12.4226 93.2505 12.376 93.6891H9.78596ZM5.80996 93.6891C5.78196 93.3811 5.76796 93.0218 5.76796 92.6111C5.76796 92.1258 5.87529 91.7478 6.08996 91.4771C6.29529 91.2065 6.59396 91.0711 6.98596 91.0711C7.40596 91.0711 7.72796 91.2065 7.95196 91.4771C8.17596 91.7385 8.28796 92.0885 8.28796 92.5271V93.6891H5.80996Z"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 105.743V107.479L4.17196 103.335V101.823L14 97.679V99.513L11.494 100.535V104.721L14 105.743ZM9.88396 101.193L6.39796 102.621L9.88396 104.063V101.193Z"></path>
+            <path d="M14 109.732V111.44H9.81396V115.92H14V117.642H4.19996V115.92H8.20396V111.44H4.19996V109.732H14Z"></path>
+            <path d="M0 141V137H18V141H0Z">           </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu"><a class="logo header__logo" href="/"><img class="logo__icon" src="images/logo.svg" alt="лого"><img class="logo__text" src="images/logo-text.svg" alt="название и слоган"></a>
+    <div class="mobile-menu__list"><a class="mobile-menu__link" href="">почему мы</a>
+      <div class="mobile-menu__link mobile-menu__link-drop">
+        <div class="mobile-menu__link-drop-title">курсы</div>
+        <svg class="mobile-menu__link-drop-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="#BD004D"> </path>
+        </svg>
+        <div class="mobile-menu__courses"><a class="mobile-menu__link-course" href=""><img src="images/flags/gb.jpg" alt=""><span>английский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/fr.jpg" alt=""><span>французский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/ger.jpg" alt=""><span>немецкий</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/it.jpg" alt=""><span>итальянский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/sp.jpg" alt=""><span>испанский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/jp.jpg" alt=""><span>японский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/ch.jpg" alt=""><span>китайский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/kor.jpg" alt=""><span>корейский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/tr.jpg" alt=""><span>турецкий</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/rus.jpg" alt=""><span>русский</span></a><a class="mobile-menu__link-course" href=""><img src="images/flags/uae.jpg" alt=""><span>арабский</span></a></div>
+      </div><a class="mobile-menu__link" href="">преподаватели</a><a class="mobile-menu__link" href="">методика</a><a class="mobile-menu__link" href="">цены</a><a class="mobile-menu__link" href="">Вакансии</a><a class="mobile-menu__link" href="">job for native speakers</a><a class="mobile-menu__link" href="">отзывы</a><a class="mobile-menu__link" href="">контакты</a>
+    </div>
+    <div class="mobile-menu__social"><a class="mobile-menu__social-link" href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M16.283 13.883c0 2.026-1.615 3.354-4.026 3.354-2.121 0-4.252-.965-4.242-2.627.003-.501.376-.961.872-.961 1.249 0 1.237 1.863 3.225 1.863 1.396 0 1.872-.764 1.872-1.296 0-1.924-6.03-.745-6.03-4.362 0-1.958 1.602-3.309 4.12-3.161 2.401.142 3.809 1.202 3.944 2.193.067.647-.361 1.151-1.105 1.151-1.086 0-1.196-1.454-3.067-1.454-.844 0-1.556.352-1.556 1.116 0 1.597 5.993.67 5.993 4.184zm7.717-8.883v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4.675 8.311c.904-5.177-3.61-9.608-8.702-8.653-3.881-2.374-8.335 2.151-5.956 6.02-.925 5.165 3.589 9.654 8.722 8.673 3.888 2.357 8.329-2.174 5.936-6.04z" fill="#00aff0">           </path>
+        </svg></a><a class="mobile-menu__social-link" href="">
+        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <linearGradient id="SVGID_2_" gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047">
+            <stop offset="0" stop-color="#fd5"></stop>
+            <stop offset=".5" stop-color="#ff543e"></stop>
+            <stop offset="1" stop-color="#c837ab"></stop>
+          </linearGradient>
+          <path d="m1.5 1.633c-1.886 1.959-1.5 4.04-1.5 10.362 0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091-.559-.081-.671-.105-3.539-.11-10.173.005-12.403-.448-14.41 1.633z" fill="url(#SVGID_2_)"></path>
+          <path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" fill="#fff">           </path>
+        </svg></a><a class="mobile-menu__social-link" href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.25 16.996h-2.134c-1.205 0-1.409-.687-2.401-1.679-.897-.897-1.395-.209-1.374 1.068.006.339-.161.611-.566.611-1.264 0-3.08.178-4.918-1.806-1.883-2.033-3.857-6.111-3.857-6.513 0-.237.196-.344.524-.344h2.17c.574 0 .623.284.783.649.667 1.521 2.265 4.574 2.69 2.87.244-.978.344-3.245-.703-3.44-.594-.11.452-.746 1.968-.746.377 0 .786.041 1.205.137.769.179.771.523.761 1.026-.039 1.903-.269 3.184.233 3.507.479.31 1.739-1.717 2.403-3.281.183-.433.219-.722.734-.722h2.654c1.39 0-.182 1.997-1.383 3.557-.968 1.255-.916 1.28.209 2.324.803.744 1.75 1.76 1.75 2.336.002.272-.21.446-.748.446z" fill="#4680C2"></path>
+        </svg></a><a class="mobile-menu__social-link" href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z" fill="#4AC959"></path>
+        </svg></a><a class="mobile-menu__social-link" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+          <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.806-17.791c-.419-.386-2.114-1.616-5.887-1.633 0 0-4.451-.268-6.62 1.722-1.207 1.208-1.632 2.974-1.677 5.166-.045 2.192-.103 6.298 3.855 7.411l.004.001-.002 1.699s-.025.688.427.828c.548.17.87-.353 1.393-.916.287-.309.683-.764.982-1.111 2.707.227 4.789-.293 5.026-.37.547-.178 3.639-.574 4.142-4.679.519-4.234-.251-6.911-1.643-8.118zm.458 7.812c-.425 3.428-2.933 3.645-3.395 3.793-.197.063-2.026.518-4.325.368 0 0-1.714 2.067-2.249 2.605-.083.084-.181.118-.247.102-.092-.023-.118-.132-.116-.291l.014-2.824c-3.348-.93-3.153-4.425-3.115-6.255.038-1.83.382-3.33 1.403-4.338 1.835-1.662 5.615-1.414 5.615-1.414 3.192.014 4.722.976 5.077 1.298 1.177 1.008 1.777 3.421 1.338 6.956zm-6.025.206s.3.026.461-.174l.315-.396c.152-.196.519-.322.878-.122.475.268 1.09.69 1.511 1.083.232.196.286.484.128.788l-.002.006c-.162.288-.38.557-.655.807l-.006.005c-.309.258-.665.408-1.046.284l-.007-.01c-.683-.193-2.322-1.029-3.367-1.862-1.709-1.349-2.923-3.573-3.26-4.765l-.01-.007c-.124-.382.027-.738.284-1.046l.005-.006c.251-.275.52-.492.807-.655l.006-.001c.304-.159.592-.105.788.127.258.267.743.908 1.083 1.511.2.359.075.726-.122.878l-.396.315c-.2.161-.174.461-.174.461s.586 2.219 2.779 2.779zm3.451-1.84c.118-.001.213-.097.212-.215-.011-1.404-.441-2.531-1.278-3.348-.835-.814-1.887-1.231-3.126-1.24h-.001c-.117 0-.213.094-.214.212 0 .118.094.214.212.215 1.125.008 2.078.384 2.831 1.119.753.734 1.139 1.759 1.149 3.046.001.117.096.211.213.211h.002zm-1.123-.438h-.005c-.118-.003-.211-.1-.208-.218.016-.73-.192-1.32-.637-1.806-.443-.484-1.051-.749-1.86-.808-.117-.009-.206-.111-.197-.228.009-.118.111-.206.228-.198.91.067 1.631.385 2.144.946.515.562.767 1.27.748 2.103-.002.117-.097.209-.213.209zm-1.095-.367c-.113 0-.207-.089-.213-.203-.036-.724-.377-1.079-1.074-1.116-.117-.007-.208-.107-.201-.225.006-.117.106-.208.224-.201.919.049 1.43.575 1.477 1.521.006.118-.084.218-.202.224h-.011z" fill="#665CAC">           </path>
+        </svg></a></div><a class="mobile-menu__phone" href="tel:+79053668789">+7 905 366-87-89</a><a class="mobile-menu__email" href="mailto:lingvaflavor20@yandex.ru">lingvaflavor20@yandex.ru</a>
+  </div>
+  <script src="scripts/jquery-3.5.0.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
+</footer>
