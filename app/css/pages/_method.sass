@@ -2,41 +2,119 @@
   h1 
     +bold
     font-size: 50px
-    line-height: 60px
+    line-height: 65px
   &-about
-    margin: 50px 0
+    margin: 40px 0
     p 
       +norm
-      font-size: 24px
+      font-size: 20px
       line-height: 30px
       margin-bottom: 30px
-    &-list
-      &-title
+    .method-quote
+      +thin
+    .method-description 
+      margin-bottom: 30px
+      box-shadow: 3px 3px 10px rgba(0,0,0,.2)
+      p
+        padding: 10px 20px
+        margin: 0
+    .method-about-list-title
+        margin: 40px 0 40px 0
         +bold
-        font-size: 40px
-        line-height: 48px
-        margin-bottom: 30px
+        font-size: 45px
         color: $red
+    .method-about-list
       &-item
-        display: flex
-        margin-bottom: 50px
-        &-img
-          width: 500px
-          min-width: 500px
-          img 
+        &-list
+          display: flex
+          align-items: start
+          &-item
+            margin-bottom: 40px
+            &-title
+              margin-bottom: 20px
+              +bold
+              font-size: 30px
+            &-text
+              font-size: 20px
+          &-item-img
+            max-width: 500px
             width: 100%
-          &:nth-of-type(even)
-            margin-left: 30px
-          &:nth-of-type(odd)
-            margin-right: 30px
-        &-title
-          +bold 
-          font-size: 30px
-          line-height: 36px
-          margin-bottom: 20px
-        &-text 
-          +norm
-          font-size: 24px
-          line-height: 30px      
-              
+            &:nth-of-type(even)
+              margin-left: 20px
+            &:nth-of-type(odd)
+              margin-right: 20px
+    .icon-list
+      &-item
+        margin-bottom: 40px
+        &-list
+          display: flex
+          align-items: center
+          &-item-img
+            width: 450px
+    .about-faq-btn-wrapper
+      margin: 30px auto 40px
 
+@media (max-width: 1200px)
+  .method
+    h1
+      font-size: 40px
+      line-height: 50px
+    &-about
+      .method-about-list-title
+        font-size: 35px
+      .method-about-list
+        &-item
+          &-list
+            &-item
+              &-title
+                font-size: 27px
+
+@media ( max-width: 992px )
+  .method
+    h1
+      font-size: 40px
+      line-height: 50px
+    &-about
+      .method-about-list-title
+        font-size: 35px
+      .principles-list
+        &-item
+          &-list
+            &-item
+              &-title
+                font-size: 27px
+            &-item-img
+              min-width: 100%
+              &:nth-of-type(even), &:nth-of-type(odd)
+                margin: 0
+              img
+                margin: 0 auto
+                width: 400px
+      .method-about-list-title
+        text-align: center
+      .icon-list
+        &-item
+          margin: 0 auto 40px
+          max-width: 500px
+          &-list
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            text-align: center
+            &-item-img
+              width: 200px
+
+@media (max-width: 575px)
+  .method
+    h1
+      font-size: 35px
+      line-height: 30px
+    &-about
+      .method-about-list-title
+        font-size: 30px
+      .method-about-list
+        &-item
+          &-list
+            &-item
+              &-title
+                font-size: 25px
