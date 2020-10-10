@@ -37,14 +37,15 @@ main.contacts
 					img
 						margin: 0 auto
 						width: 100%
-				&-title
-					+bold
-					font-size: 25px
-					margin: 20px 0 0
-				&-link
-					+bold
-					margin: 10px 0 20px
-					font-size: 20px
+				&-main-info
+					&-title
+						+bold
+						font-size: 25px
+						margin: 20px 0 0
+					&-link
+						+bold
+						margin: 10px 0 20px
+						font-size: 20px
 	section.contacts-staff
 		background-color: #F5F7F8
 		.contacts-staff-list
@@ -95,7 +96,7 @@ main.contacts
 						&:first-child
 							color: $red
 						&:last-child
-							margin-bottom: 50px
+							margin-bottom: 30px
 						&:not(:first-child)
 							margin-left: 30px
 							&::before
@@ -171,16 +172,25 @@ main.contacts
 		section.contacts-social-links
 			.contacts-social-links-list
 				&-item
+					text-align: left
+					display: flex
+					justify-content: center
+					&:last-child
+						margin-bottom: 0
 					&-image
 						width: 60px
 						height: 60px
 						.contacts-social-links-list-item-image-elem
 							width: 45px
-					&-title
-						margin-top: 10px
-						font-size: 20px
-					&-link
-						font-size: 16px
+					&-main-info
+						width: 200px
+						&-title
+							margin-top: 10px
+							font-size: 20px
+						&-link
+							font-size: 16px
+					&-description
+						display: none
 		section.contacts-staff
 			.contacts-staff-list
 				&-item

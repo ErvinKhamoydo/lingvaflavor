@@ -10,19 +10,25 @@
       font-size: 20px
       line-height: 30px
       margin-bottom: 30px
+  section
+    &:nth-child(3)
+      padding: 10px 0
+      margin: 10px 0
+      background-color: #f5f7f8
     .method-quote
-      +thin
+      font-size: 20px
     .method-description 
-      margin-bottom: 30px
+      font-size: 20px
+      margin: 20px 0
       box-shadow: 3px 3px 10px rgba(0,0,0,.2)
       p
         padding: 10px 20px
         margin: 0
     .method-about-list-title
-        margin: 40px 0 40px 0
-        +bold
-        font-size: 45px
-        color: $red
+      margin: 20px 0 40px 0
+      +bold
+      font-size: 45px
+      color: $red
     .method-about-list
       &-item
         &-list
@@ -58,7 +64,7 @@
     h1
       font-size: 40px
       line-height: 50px
-    &-about
+    section
       .method-about-list-title
         font-size: 35px
       .method-about-list
@@ -67,6 +73,14 @@
             &-item
               &-title
                 font-size: 27px
+        .principles-list
+          &-item
+            &-img
+              img
+                width: 475px
+            &-content
+              &:nth-of-type(even)
+                order: 2
 
 @media ( max-width: 991px )
   .method
@@ -74,13 +88,16 @@
       font-size: 40px
       line-height: 50px
     &-about
+      p 
+        margin: 15px 0
+    section
       .method-about-list-title
+        text-align: center
         font-size: 35px
       .method-about-list
         .principles-list
           &-item
             margin: 0 auto 30px
-            max-width: 600px
             flex-wrap: wrap
             justify-content: center
             &-img
@@ -101,8 +118,6 @@
                 margin: 20px 0 
                 text-align: center
                 font-size: 27px
-      .method-about-list-title
-        text-align: center
       .icon-list
         &-item
           margin: 0 auto 40px
@@ -118,16 +133,21 @@
 @media (max-width: 575px)
   .method
     h1
-      text-align: center
       font-size: 30px
       line-height: 30px
     &-about
+      margin: 20px 0
       p
         font-size: 16px
         line-height: 18px
         margin: 10px 0
+    section
+      .method-quote, .method-description
+        font-size: 16px
       .method-about-list-title
+        text-align: left
         font-size: 25px
+        margin: 20px 0
       .method-about-list
         &-item
           &-list
@@ -135,9 +155,10 @@
               margin: 0
               &-title
                 font-size: 20px
+                text-align: left
               &-text
                 font-size: 16px
-                text-align: center
+                text-align: left
               &-img
                 max-width: 300px
                 width: 300px
@@ -148,6 +169,9 @@
             &-content
               &-title
                 font-size: 20px
+            &-img
+              max-width: 250px
+              width: 250px
       .icon-list
         &-item
           &-list
