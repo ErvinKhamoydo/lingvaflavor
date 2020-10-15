@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+
   // Слайдер на главной 
   const mainSlider = new Swiper('.swiper-container-main', {
     loop: true,
@@ -27,7 +27,7 @@ $(document).ready(function () {
     $('.mobile-menu__courses').toggleClass('active');
     $('.mobile-menu__link-drop-icon').toggleClass('active');
   });
-  
+
   // Скролл наверх
   $(".footer-top-btn").click(function () {
     $("html, body").animate({
@@ -36,4 +36,16 @@ $(document).ready(function () {
       1000
     );
   });
+
+  //Mask for inputs
+  function checkInput(selector) {
+    $(selector).bind('keypress', function (e) {
+      console.log('Вы нажали на элемент "foo"');
+      if (e.key.match(/[^a-z 0-9 @ \. \- \_]/ig)) {
+        e.preventDefault();
+      }
+    });
+  }
+  checkInput('[name="user_skype"]');
+  checkInput('[type="email"]');
 });
