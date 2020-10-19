@@ -240,6 +240,12 @@ section.vacancies-section
 				display: block
 				&-column
 					width: 100%
+					&-list
+						&-item
+							&-header
+								&-image
+									margin-right: 20px
+									max-width: 60px
 		.vacancies-team
 			&-list
 				margin: 20px 0
@@ -249,6 +255,22 @@ section.vacancies-section
 				form
 					.vacancies-team-form-input-wrapper
 						margin: 30px 0
+
+@media screen and ( max-width: 767px )
+	section.vacancies-section
+		.vacancies-team
+			&-form
+				form
+					.vacancies-team-form-input-wrapper
+						margin: 20px 0
+						flex-wrap: wrap
+						input
+							margin: 0 0 10px
+							height: 50px
+					.about-faq-btn-wrapper
+						max-width: 100%
+						width: 100%
+
 
 @media screen and ( max-width: 575px )
 	section.vacancies-section
@@ -305,8 +327,10 @@ section.vacancies-section
 				&-item
 					margin-bottom: 20px
 					display: flex
+					justify-content: start
 					flex-wrap: nowrap
 					align-items: center
+					text-align: left
 					font-size: 18px
 					&-header
 						span
@@ -315,19 +339,7 @@ section.vacancies-section
 							color: rgba(0,0,0,.9)
 							margin: 0 10px 0
 						&-image
-							margin: 0
-							max-width: 80px
-							width: 100%
+							margin: 0 5px 0 0
+							width: 80px
 							img
 								width: 100%
-			&-form
-				form
-					.vacancies-team-form-input-wrapper
-						margin: 20px 0
-						flex-wrap: wrap
-						input
-							margin: 0 0 10px
-							height: 50px
-					.about-faq-btn-wrapper
-						max-width: 345px
-						width: 100%
