@@ -40,7 +40,6 @@ $(document).ready(function () {
   //Mask for inputs
   function checkInput(selector) {
     $(selector).bind('keypress', function (e) {
-      console.log('Вы нажали на элемент "foo"');
       if (e.key.match(/[^a-z 0-9 @ \. \- \_]/ig)) {
         e.preventDefault();
       }
