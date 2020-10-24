@@ -155,7 +155,7 @@ section.vacancies-section
 						font-size: 20px
 						margin: 0 5px
 						padding: 15px 30px
-						border-radius: 10px
+						border-radius: 5px
 						border: 2px solid rgba(0,0,0,.5)
 						&:focus
 							box-shadow: inset 0 0 5px rgba(0,0,0,.5)						
@@ -187,19 +187,18 @@ section.vacancies-section
 						height: 80px
 				&-block
 					height: auto
+					padding: 0 40px
 					&-header
 						&-image
 							max-width: 100px
 					&-list
-						height: 320px
+						height: 300px
 						position: relative
 						&-item
 							display: flex
 							&:last-child
 								position: absolute
 								bottom: -25px
-							.about-faq-btn-wrapper
-								max-width: 295px
 
 @media screen and ( max-width: 992px )
 	section.vacancies-section
@@ -234,7 +233,7 @@ section.vacancies-section
 								margin-top: 30px
 								position: static
 							.about-faq-btn-wrapper
-								max-width: 100%
+								width: 100%
 		.vacancies-conditions-expectations
 			&-wrapper
 				display: block
@@ -246,11 +245,40 @@ section.vacancies-section
 								&-image
 									margin-right: 20px
 									max-width: 60px
+			.vacancies-team
+		&-list
+			margin: 50px 0
+			display: flex
+			justify-content: space-around
+			&-item
+				width: 100%
+				font-size: 20px
+				text-align: center
+				&-header
+					display: flex
+					justify-content: center
+					align-items: center
+					span
+						font-size: 80px
+						+bold
+						color: rgba(0,0,0,.9)
+						margin-right: 10px
+					&-image
+						max-width: 100px
+						width: 100%
+						img
+							width: 100%
 		.vacancies-team
 			&-list
 				margin: 20px 0
 				p 
 					margin: 5px 0
+				&-item
+					&-header
+						span
+							font-size: 60px
+						&-image
+							max-width: 60px
 			&-form
 				form
 					.vacancies-team-form-input-wrapper
