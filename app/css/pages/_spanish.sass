@@ -3,6 +3,8 @@ section.spanish-section
     padding: 30px 0
     &:nth-child(even)
         background-color: #F5F7F8
+    &:last-child
+        background-color: #fff
     h1 
         +bold
         font-size: 50px
@@ -33,7 +35,7 @@ section.spanish-section
                         margin-bottom: 40px
                         line-height: 24px
                         display: flex
-                        height: 170px
+                        min-height: 170px
                         &-image
                             margin-right: 20px
                             max-width: 30px
@@ -50,14 +52,127 @@ section.spanish-section
                 width: 50%
                 &-list
                     &-item
+                        margin-top: 0
                         padding: 0 40px
                         line-height: 24px
-                        height: 200px
+                        min-height: 200px
                         &:not(:last-child)
-                            margin-bottom: 40px
+                            margin-bottom: 50px
                         &-image
                             margin: 0 0 10px
                             max-width: 80px
                             width: 100%
                             img
                                 width: 100%
+
+@media screen and ( max-width: 1400px )
+    section.spanish-section
+        .spanish-knowledge
+            &-wrapper
+                &-column
+                    &-list
+                        min-height: 520px
+                        &-item
+                            min-height: 240px
+        .spanish-advantage
+            &-wrapper
+                margin: 30px 0
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &-column
+                    width: 50%
+                    &-list
+                        &-item
+                            margin-top: 0
+                            padding: 0 40px
+                            line-height: 24px
+                            min-height: 200px
+
+@media screen and ( max-width: 1200px )
+    section.spanish-section
+        h1
+            font-size: 40px
+            line-height: 50px
+        h2
+            font-size: 35px
+        .spanish-advantage
+            &-wrapper
+                &-column
+                    &-list
+                        &-item
+                            min-height: 260px
+                            &:not(:last-child)
+                                margin-bottom: 80px
+
+@media screen and ( max-width: 992px )
+    section.spanish-section
+        .spanish-knowledge
+            &-wrapper
+                display: block
+                &-column
+                    width: 100% 
+                    &-list
+                        min-height: 10px
+                        &-item
+                            width: 100% 
+                            min-height: 10px
+                            margin-bottom: 20px
+        .spanish-advantage
+            &-wrapper
+                display: block
+                &-column
+                    width: 100%
+                    &-list
+                        &-item
+                            min-height: 100px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            margin-bottom: 20px
+                            &:not(:last-child)
+                                margin-bottom: 20px
+                            &-image
+                                margin-right: 10px
+
+@media screen and ( max-width: 767px )
+    section.spanish-section
+        .spanish-knowledge
+            &-wrapper
+                &-column
+                    &-list
+                        &-item
+                            padding: 0
+                            &-image
+                                margin-right: 10px
+        .spanish-advantage
+            &-wrapper
+                &-column
+                    &-list
+                        &-item
+                            padding: 0
+                            align-items: center
+                            &-image
+                                img
+                                    width: 60px
+
+@media screen and ( max-width: 575px )
+    section.spanish-section
+        font-size: 16px
+        h1
+            font-size: 26px
+            line-height: 30px
+        h2
+            font-size: 23px
+        .spanish-study-need
+            padding: 5px 10px 10px
+        .spanish-advantage
+            &-wrapper
+                &-column
+                    &-list
+                        &-item
+                            align-items: start
+                            flex-wrap: wrap
+                            margin-bottom: 20px
+                            &:not(:last-child)
+                                margin-bottom: 20px
