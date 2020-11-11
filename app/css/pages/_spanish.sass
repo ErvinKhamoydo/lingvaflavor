@@ -25,7 +25,7 @@ section.spanish-section
     .spanish-price
         &-wrapper
             display: flex
-            justify-content: space-between
+            justify-content: space-evenly
             &-card
                 max-width: 420px
                 padding: 15px 15px
@@ -126,6 +126,16 @@ section.spanish-section
                             img
                                 width: 100%
 
+@media screen and ( max-width: 1700px )
+    section.spanish-section
+        .spanish-price
+            &-wrapper
+                flex-wrap: wrap
+                &-card
+                    max-width: 40%
+                    &:nth-child(n+3)
+                        margin-top: 30px
+
 @media screen and ( max-width: 1400px )
     section.spanish-section
         .spanish-price
@@ -135,8 +145,6 @@ section.spanish-section
                 &-card
                     max-width: 45%
                     margin: 0 2.5%
-                    &:last-child
-                        margin-top: 30px
         .spanish-knowledge
             &-wrapper
                 &-column
@@ -183,6 +191,11 @@ section.spanish-section
                     max-width: 60%
                     &:not(:first-child)
                         margin-top: 30px
+                    &-content
+                        &-duration
+                            &-table
+                                .main-lesson__test-button
+                                    width: 100%
         .spanish-knowledge
             &-wrapper
                 display: block

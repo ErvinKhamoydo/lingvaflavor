@@ -130,8 +130,8 @@ $(document).ready(function () {
 
   new LanguageCard(
     '.spanish-price-wrapper',
-    'СТАНДАРТ/ЭКЗАМЕН',
-    `Общий разговорный / Бизнес курс / Для путешествий / TOEFL / IELTS / DELE / GOETHE / DELF`,
+    'СТАНДАРТ',
+    `Общий разговорный / Бизнес курс / Для путешествий`,
     ['АНГЛИЙСКИЙ', 'ФРАНЦУЗСКИЙ', 'НЕМЕЦКИЙ', 'ИСПАНСКИЙ', 'ИТАЛЬЯНСКИЙ'],
     ['gb', 'fr', 'ger', 'sp', 'it'],
     'standartList'
@@ -153,5 +153,14 @@ $(document).ready(function () {
     ['ТУРЕЦКИЙ', 'АРАБСКИЙ'],
     ['tr', 'uae'],
     'arabianList'
+  ).render();
+
+  new LanguageCard(
+    '.spanish-price-wrapper',
+    'ЭКЗАМЕН',
+    `Подготовка к TOEFL / IELTS / DELE / GOETHE / DELF`,
+    ['АНГЛИЙСКИЙ', 'ФРАНЦУЗСКИЙ', 'НЕМЕЦКИЙ', 'ИСПАНСКИЙ', 'ИТАЛЬЯНСКИЙ'],
+    ['gb', 'fr', 'ger', 'sp', 'it'],
+    'exstList'
   ).render();
 });
