@@ -11,12 +11,16 @@
       line-height: 30px
       margin-bottom: 30px
   section
+    padding: 10px 0 20px
     &:nth-child(3)
-      padding: 10px 0
+      padding: 20px 0
       margin: 10px 0
       background-color: #f5f7f8
     .method-quote
-      font-size: 20px
+      text-align: center
+      +bold
+      font-size: 30px
+      color: $red
     .method-description 
       font-size: 20px
       margin: 20px 0
@@ -57,7 +61,7 @@
           &-item-img
             width: 450px
     .about-faq-btn-wrapper
-      margin: 30px auto 40px
+      margin: 0 auto 20px
 
 @media (max-width: 1199px)
   .method

@@ -1,0 +1,382 @@
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.price
+        section.price-section.price-info
+            .container
+                h1.price-info-title Персональные уроки от 725 рублей за 60 минут
+                .price-info-subtitle Занятия любым языком по одной цене! Занимайтесь один на один с преподавателем, не выходя из дома, по цене ниже, чем у репетитора.
+
+                .price-info-lesson
+                    .price-info-lesson-item
+                        .price-info-lesson-item-image
+                            img(src="images/price/teacher.svg", alt="Teacher")
+                        p Русскоязычный преподаватель от 725 руб./занятие
+                    .price-info-lesson-item
+                        .price-info-lesson-item-image
+                            img(src="images/price/security.svg", alt="Teacher")
+                        p Если после 3го занятия у Вас не будет прогресса, мы вернем Вам деньги.
+                    .price-info-lesson-item
+                        .price-info-lesson-item-image
+                            img(src="images/price/time.svg", alt="Teacher")
+                        p Длительность урока — 60 минут!
+
+        section.price-section.price-list
+            .courses-price-wrapper
+                .courses-price-wrapper-card
+                    .courses-price-wrapper-card-content
+                        h2.courses-price-wrapper-card-content-title ТАРИФ «СТАНДАРТ»
+                        .courses-price-wrapper-card-content-subtitle Общий разговорный / Бизнес курс / Для путешествий
+                        ul.courses-price-wrapper-card-content-language-list
+                            li.courses-price-wrapper-card-content-language-list-item ЯЗЫКИ:
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/gb.jpg", alt="Flag")
+                                <span>АНГЛИЙСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/fr.jpg", alt="Flag")
+                                <span>ФРАНЦУЗСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/ger.jpg", alt="Flag")
+                                <span>НЕМЕЦКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/sp.jpg", alt="Flag")
+                                <span>ИСПАНСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/it.jpg", alt="Flag")
+                                <span>ИТАЛЬЯНСКИЙ</span>          
+                        .courses-price-wrapper-card-content-duration
+                            .courses-price-wrapper-card-content-duration-title Продолжительность занятия:
+                            .courses-price-wrapper-card-content-duration-time-wrapper.standart
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button.button-test-active 60 мин.
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button 90 мин.
+                        
+                        .courses-price-wrapper-card-content-duration-title Стоимость пакета:
+                        .courses-price-wrapper-card-content-duration-table.standart-price
+                            .courses-price-wrapper-card-content-duration-table-title <span>кол-во занятий</span><span>стоимость занятия</span><span>стоимость пакета</span>
+                            .courses-price-wrapper-card-content-duration-table-content.sixty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 4
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 8
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 16
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 690 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 660 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 625 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 2900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 5520 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 10560 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1500 ₽
+                            
+                            .courses-price-wrapper-card-content-duration-table-content.ninty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 111
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 444
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 888
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 166
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6255 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 29000 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 55200 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 105600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 15000 ₽
+                            .button-test.main-lesson__test-button ЗАПИСАТЬСЯ НА БЕСПЛАНТЫЙ УРОК
+                
+                .courses-price-wrapper-card
+                    .courses-price-wrapper-card-content
+                        h2.courses-price-wrapper-card-content-title ТАРИФ «AЗИАТСКИЙ»
+                        .courses-price-wrapper-card-content-subtitle Общий разговорный / Бизнес курс / Для путешествий  
+                        ul.courses-price-wrapper-card-content-language-list
+                            li.courses-price-wrapper-card-content-language-list-item ЯЗЫКИ:
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/ch.jpg", alt="Flag")
+                                <span>КИТАЙСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/jp.jpg", alt="Flag")
+                                <span>ЯПОНСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/kor.jpg", alt="Flag")
+                                <span>КОРЕЙСКИЙ</span>        
+                        .courses-price-wrapper-card-content-duration
+                            .courses-price-wrapper-card-content-duration-title Продолжительность занятия:
+                            .courses-price-wrapper-card-content-duration-time-wrapper.asian
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button.button-test-active 60 мин.
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button 90 мин.
+                        
+                        .courses-price-wrapper-card-content-duration-title Стоимость пакета:
+                        .courses-price-wrapper-card-content-duration-table.asian-price
+                            .courses-price-wrapper-card-content-duration-table-title <span>кол-во занятий</span><span>стоимость занятия</span><span>стоимость пакета</span>
+                            .courses-price-wrapper-card-content-duration-table-content.sixty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 4
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 8
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 16
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 690 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 660 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 625 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 2900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 5520 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 10560 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1500 ₽
+                            
+                            .courses-price-wrapper-card-content-duration-table-content.ninty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 111
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 444
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 888
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 166
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6255 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 29000 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 55200 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 105600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 15000 ₽
+                            .button-test.main-lesson__test-button ЗАПИСАТЬСЯ НА БЕСПЛАНТЫЙ УРОК
+            
+                .courses-price-wrapper-card
+                    .courses-price-wrapper-card-content
+                        h2.courses-price-wrapper-card-content-title ТАРИФ «АРАБСКИЙ»
+                        .courses-price-wrapper-card-content-subtitle Общий разговорный / Бизнес курс / Для путешествий
+                        ul.courses-price-wrapper-card-content-language-list
+                            li.courses-price-wrapper-card-content-language-list-item ЯЗЫКИ:
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/tr.jpg", alt="Flag")
+                                <span>ТУРЕЦКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/uae.jpg", alt="Flag")
+                                <span>АРАБСКИЙ</span>        
+                        .courses-price-wrapper-card-content-duration
+                            .courses-price-wrapper-card-content-duration-title Продолжительность занятия:
+                            .courses-price-wrapper-card-content-duration-time-wrapper.arabian
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button.button-test-active 60 мин.
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button 90 мин.
+                        
+                        .courses-price-wrapper-card-content-duration-title Стоимость пакета:
+                        .courses-price-wrapper-card-content-duration-table.arabian-price
+                            .courses-price-wrapper-card-content-duration-table-title <span>кол-во занятий</span><span>стоимость занятия</span><span>стоимость пакета</span>
+                            .courses-price-wrapper-card-content-duration-table-content.sixty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 4
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 8
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 16
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 690 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 660 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 625 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 2900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 5520 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 10560 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1500 ₽
+                            
+                            .courses-price-wrapper-card-content-duration-table-content.ninty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 111
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 444
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 888
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 166
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6255 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 29000 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 55200 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 105600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 15000 ₽
+                            .button-test.main-lesson__test-button ЗАПИСАТЬСЯ НА БЕСПЛАНТЫЙ УРОК
+
+                .courses-price-wrapper-card
+                    .courses-price-wrapper-card-content
+                        .courses-price-wrapper-card-content-title ТАРИФ «ЭКЗАМЕН»
+                        .courses-price-wrapper-card-content-subtitle Подготовка к TOEFL / IELTS / DELE / GOETHE / DELF
+                        ul.courses-price-wrapper-card-content-language-list
+                            li.courses-price-wrapper-card-content-language-list-item ЯЗЫКИ:
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/gb.jpg", alt="Flag")
+                                <span>АНГЛИЙСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/fr.jpg", alt="Flag")
+                                <span>ФРАНЦУЗСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/ger.jpg", alt="Flag")
+                                <span>НЕМЕЦКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/sp.jpg", alt="Flag")
+                                <span>ИСПАНСКИЙ</span>
+                            li.courses-price-wrapper-card-content-language-list-item
+                                img.courses-price-wrapper-card-content-language-list-item-image(src="images/flags/it.jpg", alt="Flag")
+                                <span>ИТАЛЬЯНСКИЙ</span>             
+                        .courses-price-wrapper-card-content-duration
+                            .courses-price-wrapper-card-content-duration-title Продолжительность занятия:
+                            .courses-price-wrapper-card-content-duration-time-wrapper.exam
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button.button-test-active 60 мин.
+                                .courses-price-wrapper-card-content-duration-time-wrapper-item.button-test.main-lesson__test-button 90 мин.
+                        
+                        .courses-price-wrapper-card-content-duration-title Стоимость пакета:
+                        .courses-price-wrapper-card-content-duration-table.exam-price
+                            .courses-price-wrapper-card-content-duration-table-title <span>кол-во занятий</span><span>стоимость занятия</span><span>стоимость пакета</span>
+                            .courses-price-wrapper-card-content-duration-table-content
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 4
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 8
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 16
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 690 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 660 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 625 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 725 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 2900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 5520 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 10560 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 1500 ₽
+                            
+                            .courses-price-wrapper-card-content-duration-table-content.ninty-min
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 111
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 444
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 888
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 166
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 24
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6900 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 6255 ₽
+                                
+                                ul.courses-price-wrapper-card-content-duration-table-content-list
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 7255 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 29000 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 55200 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 105600 ₽
+                                    li.courses-price-wrapper-card-content-duration-table-content-list-item 15000 ₽
+                            .button-test.main-lesson__test-button ЗАПИСАТЬСЯ НА БЕСПЛАНТЫЙ УРОК
+                        
+
+        section.price-section.price-offer
+            .container
+                .price-offer-lesson
+                    .price-offer-lesson-item
+                        .price-offer-lesson-item-header 
+                            .price-offer-lesson-item-header-image
+                                img(src="images/price/free.svg", alt="Teacher")
+                            .price-offer-lesson-item-header-title Начните бесплатно
+                        p Пройдите пробный урок бесплатно, определите свой уровень и получите персональные рекомендации по обучению.
+                    .price-offer-lesson-item
+                        .price-offer-lesson-item-header 
+                            .price-offer-lesson-item-header-image
+                                img(src="images/price/sale.svg", alt="Teacher")
+                            .price-offer-lesson-item-header-title Занимайтесь со скидкой
+                        p Получайте скидки при покупке пакетов занятий или занятиях вдвоем.
+                    .price-offer-lesson-item
+                        .price-offer-lesson-item-header 
+                            .price-offer-lesson-item-header-image
+                                img(src="images/price/security.svg", alt="Teacher")
+                            .price-offer-lesson-item-header-title Гарантии
+                        p Заморозим Ваш баланс или вернем деньги по первому требованию. <span> Если после 3го занятий у Вас не будет прогресса, мы вернем Вам деньги. <span>
+
+                .button-test.main-lesson__test-button ЗАПИСАТЬСЯ НА БЕСПЛАНТЫЙ УРОК
+
+        section.price-section.price-payment
+            .container 
+                h2.price-payment-title Способы оплаты
+                .price-payment-subtitle Если у вас возникли вопросы  по оплате, свяжитесь с нами.
+                .price-payment-list
+                    .price-payment-list-image
+                        img(src="images/price/visa-ms.png", alt="Visa/MasterCard")
+                    .price-payment-list-image
+                        img(src="images/price/wm.png", alt="WebMoney")
+                    .price-payment-list-image
+                        img(src="images/price/yan.png", alt="YandexMoney")
+                    .price-payment-list-image
+                        img(src="images/price/sb.png", alt="Сбербанк")
+                    .price-payment-list-image
+                        img(src="images/price/pp.png", alt="PayPal")
+                    .price-payment-list-image
+                        img(src="images/price/wu.png", alt="WesterUnoin")
+
+        section.price-section.price-questions
+            .container
+                h2.price-payment-title Вопросы об оплате
+                .price-payment-subtitle Ниже представлены ответы на часто задаваемые вопросы по оплате
+
+                #accordion.price-questions-accordion
+                    p.price-questions-accordion-heading <span>Как я могу оплачивать занятия? </span>
+                    .price-questions-accordion-block
+                        p Оплатить пакет занятий Вы можете зарегистрировавшись в личном кабинете и выбрать удобный для Вас способ оплаты – наличным или безналичным путем.
+                    p.price-questions-accordion-heading <span>Могу ли я вернуть деньги за уже оплаченные занятия, если не смогу продолжать заниматься?</span>
+                    .price-questions-accordion-block
+                        p Мы возвращаем Вам деньги за оплаченные занятия по первому требованию.
+                    p.price-questions-accordion-heading <span>Могут ли поменяться цены на уроки в течение обучения?</span>
+                    .price-questions-accordion-block
+                        p Стоимость занятий не может поменяться в течение учебного года (01.09 – 31.08).  Также, если Вы покупаете пакет уроков на длительный период (от 6 месяцев и более) и этот период переходит на новый учебный год, стоимость Ваших занятий также не изменится. Обо всех ценовых изменениях, связанных с переходом на новый учебный год, наши менеджеры обязуются проинформировать Вас за месяц до предполагаемого изменения цен.
+                    p.price-questions-accordion-heading <span>Могу ли я приостановить занятия на какое-то время?</span>
+                    .price-questions-accordion-block
+                        p Если Вы решили временно приостановить занятия, оплаченные уроки на Вашем счете замораживаются и снова активируются, когда Вы решаете возобновить обучение.
+
+
+                    
+
+
+    include includes/footer.pug

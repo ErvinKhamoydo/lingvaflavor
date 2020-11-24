@@ -15,74 +15,13 @@ section.spanish-section
         text-align: center
     .subtitle
         text-align: center
-        margin-bottom: 40px
+        margin: 10px 0 40px
     .spanish-study-need
         margin: 30px 0
         padding: 10px 20px 20px
         box-shadow: 3px 3px 10px rgba(0,0,0,.2)
         p:first-child
             margin-bottom: 30px
-    .spanish-price
-        &-wrapper
-            display: flex
-            justify-content: space-evenly
-            &-card
-                max-width: 420px
-                padding: 15px 15px
-                box-shadow: 3px 3px 10px rgba(0,0,0,.2)
-                h2
-                    font-size: 25px
-                &-content
-                    &-subtitle 
-                        font-size: 16px
-                        margin: 10px 0
-                        min-height: 35px
-                    &-language-list
-                        min-height: 220px
-                        position: relative
-                        &::after
-                            content: ''
-                            display: block
-                            position: absolute
-                            width: 100%
-                            height: 1px
-                            margin: 0 0 20px
-                            bottom: 0
-                            background-color: #BD004D
-                        &-item
-                            display: flex
-                            margin-bottom: 10px
-                            +bold
-                            &-image
-                                max-width: 40px
-                                width: 100%
-                                margin-right: 10px
-                                img
-                                    width: 100%
-                    &-duration
-                        &-title
-                            font-size: 22px
-                            +bold
-                        &-time-wrapper
-                            margin: 15px 0
-                            display: flex
-                        &-table
-                            &-title
-                                margin: 10px 0
-                                font-size: 14px
-                                display: flex
-                                justify-content: space-between
-                                +bold
-                                color: #ffffff
-                                background-color: #BD004D
-                                padding: 7px 10px
-                            &-content
-                                display: flex
-                                justify-content: space-around
-                                margin: 10px 0
-                                &-list
-                                    &-item
-                                        margin: 5px 0
     .spanish-knowledge
         &-wrapper
             display: flex
@@ -126,25 +65,8 @@ section.spanish-section
                             img
                                 width: 100%
 
-@media screen and ( max-width: 1700px )
-    section.spanish-section
-        .spanish-price
-            &-wrapper
-                flex-wrap: wrap
-                &-card
-                    max-width: 40%
-                    &:nth-child(n+3)
-                        margin-top: 30px
-
 @media screen and ( max-width: 1400px )
     section.spanish-section
-        .spanish-price
-            &-wrapper
-                justify-content: center
-                flex-wrap: wrap
-                &-card
-                    max-width: 45%
-                    margin: 0 2.5%
         .spanish-knowledge
             &-wrapper
                 &-column
@@ -185,17 +107,6 @@ section.spanish-section
 
 @media screen and ( max-width: 992px )
     section.spanish-section
-        .spanish-price
-            &-wrapper
-                &-card
-                    max-width: 60%
-                    &:not(:first-child)
-                        margin-top: 30px
-                    &-content
-                        &-duration
-                            &-table
-                                .main-lesson__test-button
-                                    width: 100%
         .spanish-knowledge
             &-wrapper
                 display: block
@@ -227,10 +138,6 @@ section.spanish-section
 
 @media screen and ( max-width: 767px )
     section.spanish-section
-        .spanish-price
-            &-wrapper
-                &-card
-                    max-width: 80%
         .spanish-knowledge
             &-wrapper
                 &-column
@@ -263,26 +170,6 @@ section.spanish-section
         .spanish-study-need
             padding: 5px 10px 10px
             margin: 0
-        .spanish-price
-            &-wrapper
-                &-card
-                    max-width: 100%
-                    width: 100%
-                    padding: 5px
-                    margin: 0
-                    &-content
-                        &-language-list
-                            margin-bottom: 20px
-                            min-height: 190px
-                            &::after
-                                bottom: -20px
-                        &-duration
-                            &-title
-                                font-size: 22px
-                                +bold
-                            &-time-wrapper
-                                &-item 
-                                    width: 50%
         .spanish-advantage
             &-wrapper
                 &-column

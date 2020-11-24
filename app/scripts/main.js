@@ -47,4 +47,52 @@ $(document).ready(function () {
   }
   checkInput('[name="user_skype"]');
   checkInput('[type="email"]');
+
+  //Tabs
+  function tabs(triggerparent, priceParent) {
+    const tabsParent = $(triggerparent);
+
+    tabsParent.on('click', function (e) {
+      const targetItem = e.target;
+      let tabIndex = $(`${triggerparent} > div`).index(e.target);
+
+      tabsParent.children().removeClass('button-test-active')
+      $(targetItem).addClass('button-test-active');
+
+      $(`${priceParent} > .courses-price-wrapper-card-content-duration-table-content`).css('display', 'none');
+      $(`${priceParent} > .courses-price-wrapper-card-content-duration-table-content:eq(${tabIndex})`).css('display', 'flex');
+    });
+  }
+
+  tabs('.standart', '.standart-price');
+  tabs('.exam', '.exam-price');
+  tabs('.asian', '.asian-price');
+  tabs('.arabian', '.arabian-price');
+
+
+  // Accordion
+  const accordion = (triggersSelector) => {
+    const btns = document.querySelectorAll(triggersSelector);
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        btns.forEach(btn => {
+          btn.classList.remove('active-style');
+          btn.nextElementSibling.classList.remove('active-content');
+          btn.nextElementSibling.style.maxHeight = 0 + 'px';
+        });
+
+        this.classList.toggle('active-style');
+        this.nextElementSibling.classList.toggle('active-content');
+
+        if (this.classList.contains('active-style')) {
+          this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + 'px';
+        } else {
+          this.nextElementSibling.style.maxHeight = 0 + 'px';
+        }
+      });
+    });
+  };
+
+  accordion('.price-questions-accordion-heading');
 });
