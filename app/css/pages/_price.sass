@@ -18,14 +18,16 @@ section.price-section
             align-items: center
             justify-content: space-between
             &-item
-                max-width: 400px
+                max-width: 320px
                 display: flex
                 justify-content: center
                 align-items: center 
+                flex-wrap: wrap
+                text-align: center
                 &-image
                     max-width: 80px
                     width: 100%
-                    margin-right: 10px
+                    margin: 0 0 10px 10px
                     img
                         width: 100%
     .price-offer
@@ -136,7 +138,21 @@ section.price-section
             &-list
                 flex-wrap: wrap
                 &-image 
-                    margin: 10px 10px
+                    margin: 10px 55px 10px
+
+@media (max-width: 767px)
+    section.price-section
+        .price-info
+            &-lesson
+                &-item
+                    flex-wrap: nowrap
+                    text-align: left
+                    &-image
+                        margin: 0 10px 0 0
+        .price-payment
+            &-list
+                &-image 
+                    margin: 10px 30px 10px
 
 @media (max-width: 575px)
     section.price-section
@@ -169,8 +185,9 @@ section.price-section
             &-list
                 margin-top: 10px
                 &-image
-                    max-width: 130px
+                    max-width: 110px
                     width: 100%
+                    margin: 10px 20px 10px
                     img
                         width: 100%
                     &:first-child, &:last-child
